@@ -1,0 +1,344 @@
+body {
+    background-color: rgb(4, 0, 26);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(4, 0, 26);
+    width: 100%;
+    height: 15%;
+    padding: 0;
+}
+
+.navbar {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    outline: none;
+}
+
+.logo {
+    color: #0a0236;
+    font-weight: bold;
+}
+
+.logo a {
+    color: inherit;
+    font-weight: inherit;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.links {
+    display: flex;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    font-size: 20px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.links a {
+    position: relative;
+    color: rgb(220, 215, 223);
+    font-size: inherit;
+    margin: 0 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.links a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.h1-content {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 10vh;
+}
+
+.logorpl {
+    display: flex;
+    float: left;
+    padding-top: 40px;
+    margin-left: 30px;
+    width: 400px;
+    height: 200px;
+}
+
+.image {
+    padding-left: 10px;
+    margin-left: 50px;
+}
+
+.text {
+    overflow: hidden;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    left: 20px;
+}
+
+.list {
+    text-align: left;
+    align-items: left;
+    padding: 30px;
+    bottom: 30px;
+}
+
+.font {
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+}
+
+.vidsmk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 500px;
+    height: 300px;
+}
+
+u {
+    color: white;
+}
+
+.back {
+    padding-left: 20px;
+    padding-top: 60px;
+    color: white;
+}
+
+.round {
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+.fontov {
+    overflow: hidden;
+    text-align: left;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 200px;
+}
+
+.teks {
+    text-align: center;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    color: white;
+}
+
+.back-button {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    background-color: white;
+    color: #0a0236;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 5px;
+    transition: background-color 0.3s;
+    animation: move 0.6s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+.horizontal-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.horizontal-gallery img {
+    text-align: flex-start;
+    text-align: center;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+    height: 150px;
+}
+
+.other-image {
+    display: block;
+    margin-top: 40px;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.form {
+    max-width: 400px;
+    margin: auto;
+    background-image: url(images2.jpg);
+    color: white;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    position: relative;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #1dc417, #13dd67);
+    z-index: -1;
+}
+
+button:hover {
+    z-index: 0;
+    align-items: center;
+    text-align: center;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    color: white;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-right: 200px;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    color: white;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    color: white;
+}
+
+.h2li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.h3 {
+    text-align: center;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.lii {
+    list-style-type: none;
+}
+
+.btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    color: white;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', 'Comic Sans MS', 'Courier New', monospace;
+    color: white;
+}
